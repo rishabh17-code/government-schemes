@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Schemes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Government Schemes Recommendation</h1>
+
+    <div class="form-container">
+        <label>Income (₹):</label>
+        <input type="number" id="income" placeholder="Enter your income">
+
+        <label>Education:</label>
+        <select id="education">
+            <option value="highschool">High School</option>
+            <option value="graduate">Graduate</option>
+            <option value="postgraduate">Post Graduate</option>
+        </select>
+
+        <label>Region:</label>
+        <select id="region">
+            <option value="urban">Urban</option>
+            <option value="rural">Rural</option>
+        </select>
+
+        <label>Profession:</label>
+        <select id="profession">
+            <option value="student">Student</option>
+            <option value="farmer">Farmer</option>
+            <option value="entrepreneur">Entrepreneur</option>
+        </select>
+
+        <button onclick="findSchemes()">Find Schemes</button>
+    </div>
+
+    <h2>Recommended Schemes:</h2>
+    <ul id="schemes-list"></ul>
+
+    <script src="schemes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
